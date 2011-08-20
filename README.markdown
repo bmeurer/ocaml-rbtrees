@@ -33,5 +33,5 @@ Benedikt Meurer :: benedikt.meurer@googlemail.com :: [@bmeurer](http://twitter.c
 
 ## Copyright
 
-Copyright (c) 2007-2011 Benedikt Meurer. See the [License](http://github.com/bmeurer/ocaml-rbtress/raw/master/LICENSE) file for details.
+Copyright (c) 2007-2011 Benedikt Meurer. See the [License](http://github.com/bmeurer/ocaml-rbtrees/raw/master/LICENSE) file for details.
 
