@@ -1,0 +1,28 @@
+OASISFormat: 0.1
+Name:        rbtrees
+Version:     0.1.0
+LicenseFile: LICENSE
+License:     MIT
+BuildType:   ocamlbuild (0.2)
+Authors:     Benedikt Meurer <benedikt.meurer@googlemail.com>
+Copyrights:  (c) 2007-2011 Benedikt Meurer
+Homepage:    https://github.com/bmeurer/ocaml-rbtrees/
+Plugins:     META (0.2), DevFiles (0.2), StdFiles (0.2)
+BuildTools:  ocamlbuild, make
+
+Synopsis:    An implementation of Red-Black Trees for OCaml
+Description:
+  This is my implementation of Red-Black Trees for OCaml. It is based upon
+  the implementation described in the paper "Red-Black Trees in a Functional
+  Setting" by Chris Okasaki published in "Journal of Functional Programming",
+  9(4):471-477, July 1999.
+  .
+  The Red-Black Trees are exposed via a map and a set API, which is designed
+  to be compatible with the Map and Set modules in the OCaml standard library
+  (which are implemented using AVL trees). You can use the Rbmap and Rbset 
+  modules as drop-in replacement for the Map and Set modules.
+
+Library rbtrees
+  Path:       src
+  Modules:    Rbmap, Rbset
+

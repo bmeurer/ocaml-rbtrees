@@ -1,0 +1,5 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: e942a2fe0c55577e1d7b667ade0ddf44) *)
+Authors of rbtrees
+Benedikt Meurer <benedikt.meurer@googlemail.com>
+(* OASIS_STOP *)

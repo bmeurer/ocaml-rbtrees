@@ -1,63 +1,38 @@
-# Copyright (c) 2009, Benedikt Meurer <benedikt.meurer@googlemail.com>
-# All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions
-# are met:
-#
-# 1. Redistributions of source code must retain the above copyright
-#    notice, this list of conditions and the following disclaimer.
-# 2. Redistributions in binary form must reproduce the above copyright
-#    notice, this list of conditions and the following disclaimer in the
-#    documentation and/or other materials provided with the distribution.
-#
-# THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
-# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-# ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
-# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-# OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-# HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-# OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-# SUCH DAMAGE.
+# OASIS_START
+# DO NOT EDIT (digest: bc1e05bfc8b39b664f29dae8dbd3ebbb)
 
-OCAMLC=ocamlc
-OCAMLCFLAGS=-g -warn-error A
-OCAMLDEP=ocamldep
-OCAMLDEPFLAGS=
-OCAMLOPT=ocamlopt
-OCAMLOPTFLAGS=$(OCAMLCFLAGS)
+SETUP = ocaml setup.ml
 
-SOURCES=		\
-	rbmap.ml	\
-	rbmap.mli	\
-	rbset.ml	\
-	rbset.mli
+build: setup.data
+	$(SETUP) -build $(BUILDFLAGS)
 
-OBJECTS=$(patsubst %.ml,%.cmo,$(patsubst %.mli,%.cmi,$(SOURCES)))	\
-	$(patsubst %.ml,%.cmx,$(patsubst %.mli,%.cmi,$(SOURCES)))
+doc: setup.data build
+	$(SETUP) -doc $(DOCFLAGS)
 
-all: $(OBJECTS)
+test: setup.data build
+	$(SETUP) -test $(TESTFLAGS)
 
-clean:
-	rm -f .depend *.cmi *.cmo *.cmx *.o
+all: 
+	$(SETUP) -all $(ALLFLAGS)
 
-.SUFFIXES: .cmi .cmo .cmx .ml .mli
+install: setup.data
+	$(SETUP) -install $(INSTALLFLAGS)
 
-.ml.cmo:
-	$(OCAMLC) $(OCAMLCFLAGS) -c -o $@ $<
+uninstall: setup.data
+	$(SETUP) -uninstall $(UNINSTALLFLAGS)
 
-.ml.cmx:
-	$(OCAMLOPT) $(OCAMLOPTFLAGS) -c -o $@ $<
+reinstall: setup.data
+	$(SETUP) -reinstall $(REINSTALLFLAGS)
 
-.mli.cmi:
-	$(OCAMLC) $(OCAMLCFLAGS) -c -o $@ $<
+clean: 
+	$(SETUP) -clean $(CLEANFLAGS)
 
-.depend: Makefile $(SOURCES)
-	$(OCAMLDEP) $(OCAMLDEPFLAGS) $(SOURCES) > $@
+distclean: 
+	$(SETUP) -distclean $(DISTCLEANFLAGS)
 
-include .depend
+setup.data:
+	$(SETUP) -configure $(CONFIGUREFLAGS)
 
-.PHONY: clean
+.PHONY: build doc test all install uninstall reinstall clean distclean configure
+
+# OASIS_STOP
