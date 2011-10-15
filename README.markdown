@@ -2,7 +2,7 @@
 
 This is my implementation of Red-Black Trees for OCaml. It is based upon [_Red-Black Trees in a Functional Setting_](http://www.eecs.usma.edu/webs/people/okasaki/pubs.html#jfp99) by [Chris Okasaki](http://www.eecs.usma.edu/webs/people/okasaki/) in _Journal of Functional Programming_, 9(4):471-477, July 1999.
 
-The Red-Black Trees are exposed via a map and a set API, which is designed to be compatible with the Map and Set modules in the OCaml standard library (which are implemented using AVL trees). You can use the [Rbmap](https://github.com/bmeurer/ocaml-rbtrees/blob/master/rbmap.ml) and [Rbset](https://github.com/bmeurer/ocaml-rbtrees/blob/master/rbset.ml) modules as drop-in replacement for the Map and Set modules.
+The Red-Black Trees are exposed via a map and a set API, which is designed to be compatible with the Map and Set modules in the OCaml standard library (which are implemented using AVL trees). You can use the [Rbmap](https://github.com/bmeurer/ocaml-rbtrees/blob/master/src/rbmap.ml) and [Rbset](https://github.com/bmeurer/ocaml-rbtrees/blob/master/src/rbset.ml) modules as drop-in replacement for the Map and Set modules.
  
 
 ## License
