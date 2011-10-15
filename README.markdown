@@ -7,7 +7,7 @@ The Red-Black Trees are exposed via a map and a set API, which is designed to be
 
 ## License
 
-This implementation is licensed under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD_license). See the [LICENSE](http://github.com/bmeurer/ocaml-rbtress/raw/master/LICENSE) file for details.
+This implementation is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php). See the [LICENSE](http://github.com/bmeurer/ocaml-rbtress/raw/master/LICENSE) file for details.
 
 
 ## Bug Reports
