@@ -1,4 +1,4 @@
-# Red-Black Trees for OCAml
+# Red-Black Trees for OCaml
 
 This is my implementation of Red-Black Trees for OCaml. It is based upon [_Red-Black Trees in a Functional Setting_](http://www.eecs.usma.edu/webs/people/okasaki/pubs.html#jfp99) by [Chris Okasaki](http://www.eecs.usma.edu/webs/people/okasaki/) in _Journal of Functional Programming_, 9(4):471-477, July 1999.
 
