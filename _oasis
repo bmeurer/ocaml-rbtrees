@@ -1,4 +1,4 @@
-OASISFormat: 0.1
+OASISFormat: 0.2
 Name:        rbtrees
 Version:     0.1.0
 LicenseFile: LICENSE
@@ -8,7 +8,7 @@ Authors:     Benedikt Meurer <benedikt.meurer@googlemail.com>
 Copyrights:  (c) 2007-2011 Benedikt Meurer
 Homepage:    https://github.com/bmeurer/ocaml-rbtrees/
 Plugins:     META (0.2), DevFiles (0.2), StdFiles (0.2)
-BuildTools:  ocamlbuild, make
+BuildTools:  ocamlbuild
 
 Synopsis:    An implementation of Red-Black Trees for OCaml
 Description:
@@ -26,3 +26,10 @@ Library "rbtrees"
   Path:       src
   Modules:    Rbmap, Rbset
 
+Document "rbtrees"
+  Title: API reference for rbtrees
+  Type: ocamlbuild (0.2)
+  InstallDir: $htmldir
+  BuildTools: ocamldoc
+  XOCamlbuildPath: src
+  XOCamlbuildLibraries: rbtrees
