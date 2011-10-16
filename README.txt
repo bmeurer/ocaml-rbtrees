@@ -1,6 +1,6 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 2feecb19f223e73c54873c060c15e133) *)
-This is the README file for the rbtrees distribution.
+(* DO NOT EDIT (digest: 0172573a9fe88116311359991eb3a846) *)
+This is the README file for the ocaml-rbtrees distribution.
 
 (c) 2007-2011 Benedikt Meurer
 

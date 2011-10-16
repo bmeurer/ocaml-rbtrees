@@ -1,6 +1,6 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 08e8e7a2c18046de52b41dac94cfd5ba) *)
-This is the INSTALL file for the rbtrees distribution.
+(* DO NOT EDIT (digest: 1540ad8d44b8c9184de31d2526bc233e) *)
+This is the INSTALL file for the ocaml-rbtrees distribution.
 
 This package uses OASIS to generate its build system. See section OASIS for
 full information. 
