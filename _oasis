@@ -1,6 +1,6 @@
 OASISFormat: 0.2
 Name:        ocaml-rbtrees
-Version:     0.1.0
+Version:     0.2.0+dev
 LicenseFile: LICENSE
 License:     MIT
 BuildType:   ocamlbuild (0.2)

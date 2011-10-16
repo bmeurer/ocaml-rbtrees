@@ -1,6 +1,6 @@
 # OASIS_START
-# DO NOT EDIT (digest: 77ef89eff0a48e668fadd4ffd380ad36)
-version = "0.1.0"
+# DO NOT EDIT (digest: a3382b6674aeaf763babbbbb959ad591)
+version = "0.2.0+dev"
 description = "An implementation of Red-Black Trees for OCaml"
 archive(byte) = "rbtrees.cma"
 archive(native) = "rbtrees.cmxa"
