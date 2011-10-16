@@ -23,8 +23,8 @@ Description:
   modules as drop-in replacement for the Map and Set modules.
 
 Library "rbtrees"
-  Path:       src
-  Modules:    Rbmap, Rbset
+  Path: src
+  Modules: Rbmap, Rbset
 
 Document "rbtrees"
   Title: API reference for rbtrees
@@ -33,3 +33,9 @@ Document "rbtrees"
   BuildTools: ocamldoc
   XOCamlbuildPath: src
   XOCamlbuildLibraries: rbtrees
+
+SourceRepository master
+  Type: git
+  Branch: master
+  Browser: https://github.com/bmeurer/ocaml-rbtrees
+  Location: git://github.com/bmeurer/ocaml-rbtrees.git
