@@ -22,7 +22,7 @@ Description:
   (which are implemented using AVL trees). You can use the Rbmap and Rbset 
   modules as drop-in replacement for the Map and Set modules.
 
-Library rbtrees
+Library "rbtrees"
   Path:       src
   Modules:    Rbmap, Rbset
 
