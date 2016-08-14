@@ -163,7 +163,7 @@ struct
         let l, ky, y, d = remove_min l in
         let m = Black(l, kx, x, r) in
           if d then
-            let s, d = unbalanced_right m in m, ky, y, d
+            let m, d = unbalanced_right m in m, ky, y, d
           else
             m, ky, y, false
     | Red(l, kx, x, r) ->
